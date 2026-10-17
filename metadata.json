@@ -1,0 +1,6 @@
+{
+  "name": "Cosmic Gem Rush",
+  "description": "A spectacular cosmic arcade game where you collect magical gems, dodge hazards, unleash power-ups, and travel through vibrant worlds.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

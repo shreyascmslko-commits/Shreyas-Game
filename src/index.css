@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-display: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-cinzel: 'Cinzel', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #050510;
+    color: #f1f5f9;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    overflow: hidden;
+  }
+}
+
+.font-cinzel {
+  font-family: var(--font-cinzel);
+}
+
+.text-gold-metallic {
+  background: linear-gradient(135deg, #fef08a 0%, #fbbf24 40%, #f59e0b 70%, #d97706 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom glow helpers and game animations */
+.glow-text-cyan {
+  text-shadow: 0 0 12px rgba(6, 182, 212, 0.6), 0 0 24px rgba(6, 182, 212, 0.3);
+}
+
+.glow-text-purple {
+  text-shadow: 0 0 12px rgba(168, 85, 247, 0.6), 0 0 24px rgba(168, 85, 247, 0.3);
+}
+
+.glow-text-gold {
+  text-shadow: 0 0 12px rgba(245, 158, 11, 0.6), 0 0 24px rgba(245, 158, 11, 0.3);
+}
+
+.glow-box-cyan {
+  box-shadow: 0 0 20px -3px rgba(6, 182, 212, 0.4), inset 0 0 15px -3px rgba(6, 182, 212, 0.2);
+}
+
+.glow-box-purple {
+  box-shadow: 0 0 20px -3px rgba(168, 85, 247, 0.4), inset 0 0 15px -3px rgba(168, 85, 247, 0.2);
+}
+
+/* High contrast mode overrides */
+.high-contrast {
+  filter: contrast(125%) saturate(120%);
+}
+
+.high-contrast canvas {
+  filter: contrast(135%);
+}
